@@ -6,104 +6,79 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #000;
-    color: #fff;
+    color: #000;
 }
 
 body.dark-theme {
-    background-color: #fff;
+    background-color: #000;
     color: #000;
 }
+
 h1 {
     font-family: 'Oswald', sans-serif;
 }
 
-nav {
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+.navbar {
+    background-color: #000; /* Adiciona uma cor de fundo preta ao menu */
+    color: 000;
 }
 
-.content {
-    width: 100%;
-}
-
-.nav-links {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.title, .name, .description {
-    margin: 0;
-    padding: 0;
-}
-
-.nav-button, .nav-button-social {
-    color: #fff;
+.nav-item {
+    color: #FFFFFF;
     text-decoration: none;
     margin-right: 15px;
-    flex-grow: 1;
-    text-align: center;
 }
 
-.nav-button-social img {
+.nav-item img {
     width: 24px;
     height: 24px;
 }
 
-/* Estilos para telas com largura mínima de 600px */
-@media (min-width: 600px) {
-    nav {
-        flex-direction: row;
-    }
-
-    .content {
-        float: left;
-        width: 50%;
-    }
-
-    .nav-links {
-        float: right;
-        width: 50%;
-    }
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.right-aligned-image {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-between;
+.container {
+    margin-top: 0; /* Remove a margem para alinhar o menu e o portfólio no topo */
+    color: #000;
 }
 
 .card {
-    background-color: #fff;
     color: #000;
-    padding: 20px;
-    margin: 10px;
-    width: calc(50% - 20px);
-    box-sizing: border-box;
 }
+
+.card.projeto {
+    background-color: #fff; /* Adiciona uma cor de fundo branca para o card de projeto */
+    color: #000;
+    border: 1px solid #ccc; /* Adiciona uma borda cinza ao card de projeto */
+}
+
+.card.rodolfo {
+    background-color: #000; /* Adiciona uma cor de fundo branca para o card de projeto */
+    color: #000;
+    border: 1px solid #ccc; /* Adiciona uma borda cinza ao card de projeto */
+}
+
+.card.imagem {
+    background-color: #000; /* Adiciona uma cor de fundo branca para o card de projeto */
+    color: #000;
+}
+
 
 .card-title {
     margin: 0;
     font-size: 24px;
 }
 
+.card-title-projeto {
+    margin: 0;
+    font-size: 24px;
+    color: rgba(0,0,0,.9);
+
+}
+
 .card-description {
     font-size: 16px;
+}
+.card-projeto {
+    font-size: 16px;
+    color: rgba(0,0,0,.9);
 }
 
 .card-tools {
@@ -120,19 +95,36 @@ img {
 .card-button {
     color: #fff;
     background-color: #FF4500;
-    padding: 5px 10px; /* Diminui o padding para reduzir o tamanho do botão */
+    padding: 5px 10px;
     text-decoration: none;
     width: 45%;
     text-align: center;
 }
-body.dark-theme #sobre,
-body.light-theme #sobre {
+
+body.dark-theme .card,
+body.light-theme .card {
     color: #fff;
     background-color: #000;
+}
+.whatsapp-button button {
+    background-color: #25D366; /* Cor de fundo do WhatsApp */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
-body.dark-theme #projetos,
-body.light-theme #projetos {
-    color: #fff;
-    background-color: #000;
+.whatsapp-button button:hover {
+    background-color: #128C7E; /* Muda a cor de fundo quando o mouse passa por cima */
 }
+.button-container .btn {
+    width: 100%; /* Faz com que todos os botões tenham a mesma largura */
+    margin-bottom: 10px; /* Adiciona um espaço entre os botões */
+}
+
+.whatsapp-button {
+    background-color: #25D366; /* Cor de fundo do WhatsApp */
+    color: white; /* Cor do texto */
+}
+
