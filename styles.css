@@ -58,8 +58,15 @@ h1 {
 .card.imagem {
     background-color: #000; /* Adiciona uma cor de fundo branca para o card de projeto */
     color: #000;
+    border: 2px solid #fff;
 }
 
+.card.imagem .card-body {
+    font-size: 10px; /* Define o tamanho do texto dentro do card para 12 pixels */
+}
+.legend {
+    font-size: 10px;
+}
 
 .card-title {
     margin: 0;
