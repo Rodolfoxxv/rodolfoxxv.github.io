@@ -129,15 +129,36 @@
     <div class="card-columns">
         <div class="card text-white projeto">
             <div class="card-body">
-                <h2 class="card-title-projeto"><strong>Banco de Dados: Banco de Dados Data Matrix </strong></h2>
-                <p class="card-projeto">O “Banco de Dados Data Matrix” é como um supermercado de informações. Ele organiza e armazena dados de forma segura e eficiente, facilitando o acesso quando necessário.
-As ferramentas que usamos, como GitLab Pro e GitHub, são como os funcionários do supermercado que organizam as prateleiras. O Cloud Source Repositories é o nosso cofre, onde guardamos as informações mais valiosas.
-E temos a Google Cloud Platform (GCP), que é como um personal shopper. Ela ajuda a encontrar rapidamente o que você precisa, entende as informações e até prevê tendências futuras.
-Para um cientista de dados, isso significa menos tempo procurando dados e mais tempo gerando insights valiosos. É como ter um assistente pessoal para tarefas de dados, permitindo que eles se concentrem em tomar decisões estratégicas baseadas em dados. Isso traz um grande valor para qualquer negócio que dependa de análises de dados para crescer e prosperar.</p>
+                <h2 class="card-title-projeto"><strong>Terraform para GCP: Automação e Gerenciamento de Infraestrutura</strong></h2>
+                <p class="card-projeto">
+                    Este projeto utiliza Terraform, uma ferramenta de código aberto que permite definir, provisionar e gerenciar infraestrutura como código (IaC). Com o Terraform, automatizamos a criação e manutenção de recursos no Google Cloud Platform (GCP), garantindo que a infraestrutura seja replicável e consistente.
+                    <br><br>
+                    Fluxo de Trabalho:
+                    <ul>
+                        <li>Push no GitHub: Alterações são feitas no branch principal.</li>
+                        <li>Checkout: O código é clonado para a máquina virtual do GitHub Actions.</li>
+                        <li>Configuração do Terraform: A versão específica do Terraform é instalada.</li>
+                        <li>Credenciais do GCP: As credenciais são configuradas para autenticação com o GCP.</li>
+                        <li>Inicialização do Terraform: Prepara o diretório de trabalho para o Terraform.</li>
+                        <li>Validação: Verifica se a configuração é válida.</li>
+                        <li>Formatação: Ajusta o formato do código para seguir as convenções.</li>
+                        <li>Planejamento: Mostra as alterações que serão aplicadas.</li>
+                        <li>Aplicação: Aplica as alterações na infraestrutura do GCP.</li>
+                        <li>Carregamento de Dados: Executa um script para carregar dados no BigQuery.</li>
+                    </ul>
+                    <br>
+                    Benefícios:
+                    <ul>
+                        <li>Automação: Reduz a intervenção manual e aumenta a eficiência.</li>
+                        <li>Consistência: Mantém a infraestrutura alinhada com o código.</li>
+                        <li>Rastreabilidade: As mudanças são versionadas e podem ser rastreadas através do Git.</li>
+                        <li>Resultado: Os dados são carregados automaticamente no GCP Storage e no BigQuery, facilitando a análise e o gerenciamento de grandes conjuntos de dados.</li>
+                    </ul>
+                </p>
                 <div class="card-tools">
                     <img src="img/Python-logo.png" alt="Python Logo" style="width: 45px; height: 35px;">
                     <img src="img/terraformlogo.png" alt="Terraform Logo" style="width: 30px; height: 30px;">
-                    <img src="img/sql.png" alt="SQL Logo" style="width: width: 45px; height: 30px;">
+                    <img src="img/sql.png" alt="SQL Logo" style="width: 45px; height: 30px;">
                     <img src="img/google-cloud-logo.png" alt="GCP Logo" style="width: 35px; height: 30px;">
                     <img src="img/Git-Icon-1788C.png" alt="Git Logo" style="width: 35px; height: 30px;">
                 </div>
@@ -150,6 +171,7 @@ Para um cientista de dados, isso significa menos tempo procurando dados e mais t
         <!-- Aqui vão os outros cards de projetos -->
     </div>
 </section>
+
 
 <section id="fale-comigo">
     <div class="d-flex justify-content-center">
