@@ -93,6 +93,11 @@ h1 {
     color: #777;
 }
 
+
+.lista-preta {
+    color: #000;
+}
+
 .button-container {
     display: flex;
     justify-content: space-between;
