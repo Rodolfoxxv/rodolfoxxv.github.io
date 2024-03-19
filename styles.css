@@ -96,7 +96,9 @@ h1 {
 
 .lista-preta {
     color: #000;
+    text-align: left;
 }
+
 
 .button-container {
     display: flex;
