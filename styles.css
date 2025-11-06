@@ -1,144 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --bg: #0b0f17;
+    --bg-alt: #0f1624;
+    --card: rgba(255, 255, 255, 0.04);
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #e6e6e6;
+    --muted: #9aa4b2;
+    --primary: #ff6b3d; /* acento moderno */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #000;
-    color: #000;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color: var(--text);
+    background: radial-gradient(1200px 600px at 10% -10%, #162033 0%, transparent 60%),
+                            radial-gradient(1000px 500px at 90% 10%, #1b253a 0%, transparent 60%),
+                            linear-gradient(180deg, var(--bg) 0%, #0a0e15 100%);
+    line-height: 1.6;
 }
 
-body.dark-theme {
-    background-color: #000;
-    color: #000;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-}
-
+/* Navbar */
 .navbar {
-    background-color: #000; /* Adiciona uma cor de fundo preta ao menu */
-    color: 000;
+    background: transparent;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+    background: rgba(10, 14, 21, 0.7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+}
+.navbar .nav-link {
+    color: var(--text) !important;
+    opacity: 0.85;
+}
+.navbar .nav-link:hover { opacity: 1; }
+.brand-text {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #fff, var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.nav-item {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-right: 15px;
+/* Hero */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 72px; /* navbar offset */
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(600px 300px at 50% 20%, rgba(255,255,255,0.06), transparent 60%);
+    pointer-events: none;
+}
+.hero-content { z-index: 1; }
+.hero-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+@media (min-width: 992px) {
+    .hero-title { font-size: 64px; }
+}
+.gradient-text {
+    background: linear-gradient(90deg, #ffffff 0%, var(--primary) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-subtitle { color: var(--muted); margin-bottom: 24px; }
+.hero-buttons .btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+.hero-buttons .btn-outline-light {
+    color: var(--text);
+    border-color: var(--border);
+}
+.scroll-indicator { color: var(--muted); margin-top: 24px; animation: bounce 1.5s infinite; }
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
 }
 
-.nav-item img {
-    width: 24px;
-    height: 24px;
+/* Sections */
+.section-padding { padding: 80px 0; }
+.section-header { margin-bottom: 32px; }
+.section-title { font-weight: 700; margin: 0; }
+.section-underline {
+    width: 80px; height: 3px; margin: 12px auto 0; background: var(--primary);
 }
+.section-subtitle { color: var(--muted); }
+.bg-dark { background: linear-gradient(180deg, var(--bg-alt), var(--bg)); }
 
-.container {
-    margin-top: 0; /* Remove a margem para alinhar o menu e o portfólio no topo */
-    color: #000;
+/* About */
+.about-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
 }
+.about-icon { font-size: 28px; color: var(--primary); margin-bottom: 12px; }
+.about-title { margin: 0 0 8px; }
+.about-text { color: var(--muted); margin-bottom: 8px; }
 
-.card {
-    color: #000;
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
-
-.card.projeto {
-    background-color: #fff; /* Adiciona uma cor de fundo branca para o card de projeto */
-    color: #000;
-    border: 1px solid #ccc; /* Adiciona uma borda cinza ao card de projeto */
-}
-
-.card.rodolfo {
-    background-color: #000; /* Adiciona uma cor de fundo branca para o card de projeto */
-    color: #000;
-    border: 1px solid #ccc; /* Adiciona uma borda cinza ao card de projeto */
-}
-
-.card.imagem {
-    background-color: #000; /* Adiciona uma cor de fundo branca para o card de projeto */
-    color: #000;
-    border: 2px solid #fff;
-}
-
-.card.imagem .card-body {
-    font-size: 10px; /* Define o tamanho do texto dentro do card para 12 pixels */
-}
-.legend {
-    font-size: 10px;
-}
-
-.card-title {
-    margin: 0;
-    font-size: 24px;
-}
-
-.card-title-projeto {
-    margin: 0;
-    font-size: 24px;
-    color: rgba(0,0,0,.9);
-
-}
-
-.card-description {
-    font-size: 16px;
-}
-.card-projeto {
-    font-size: 16px;
-    color: rgba(0,0,0,.9);
-}
-
-.card-tools {
-    font-size: 14px;
-    color: #777;
-}
-
-
-.lista-preta {
-    color: #000;
-    text-align: left;
-}
-
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.card-button {
-    color: #fff;
-    background-color: #FF4500;
-    padding: 5px 10px;
-    text-decoration: none;
-    width: 45%;
+@media (min-width: 576px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+.stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
     text-align: center;
 }
+.stat-icon { font-size: 22px; }
+.stat-number { margin: 6px 0 0; font-size: 22px; font-weight: 700; }
+.stat-label { margin: 0; color: var(--muted); font-size: 12px; }
 
-body.dark-theme .card,
-body.light-theme .card {
-    color: #fff;
-    background-color: #000;
+/* Timeline */
+.timeline { position: relative; margin-left: 8px; }
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 10px; top: 0; bottom: 0;
+    width: 2px; background: var(--border);
 }
-.whatsapp-button button {
-    background-color: #25D366; /* Cor de fundo do WhatsApp */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    border: none; /* Remove a borda padrão */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+.timeline-item { position: relative; padding-left: 36px; margin-bottom: 28px; }
+.timeline-dot {
+    position: absolute; left: 2px; top: 6px;
+    width: 16px; height: 16px; border-radius: 50%; background: var(--primary);
+    box-shadow: 0 0 0 4px rgba(255,107,61,0.15);
+}
+.timeline-content {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px;
+}
+.timeline-year { color: var(--muted); font-size: 12px; }
+.timeline-title { margin: 4px 0 8px; }
+.timeline-description { color: var(--muted); margin: 0 0 8px; }
+.tech-tag {
+    display: inline-block; padding: 4px 10px; margin: 4px 6px 0 0;
+    background: rgba(255,107,61,0.1); color: #ffb199; border: 1px solid rgba(255,107,61,0.25);
+    border-radius: 999px; font-size: 12px;
 }
 
-.whatsapp-button button:hover {
-    background-color: #128C7E; /* Muda a cor de fundo quando o mouse passa por cima */
+/* Skills */
+.skill-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.button-container .btn {
-    width: 100%; /* Faz com que todos os botões tenham a mesma largura */
-    margin-bottom: 10px; /* Adiciona um espaço entre os botões */
-}
+.skill-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.skill-icon { width: 40px; height: 40px; object-fit: contain; margin-bottom: 8px; }
+.skill-name { margin: 0; font-size: 14px; color: var(--text); }
 
-.whatsapp-button {
-    background-color: #25D366; /* Cor de fundo do WhatsApp */
-    color: white; /* Cor do texto */
+/* Projects */
+.project-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    height: 100%;
 }
+.project-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.project-icon { color: var(--primary); font-size: 22px; }
+.project-title { margin: 0; font-size: 20px; }
+.project-description { color: var(--muted); margin: 8px 0 12px; }
+.features-title { margin: 0 0 6px; font-size: 14px; color: var(--text); opacity: 0.9; }
+.features-list { margin: 0; padding-left: 18px; color: var(--muted); }
+.features-list li { margin-bottom: 4px; }
+.project-tech { margin-top: 10px; }
+.tech-badge {
+    display: inline-block; padding: 4px 10px; margin: 4px 6px 0 0;
+    background: #141b29; color: #c8d1e0; border: 1px solid var(--border);
+    border-radius: 999px; font-size: 12px;
+}
+.project-links { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+.btn-project {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--primary); color: #12171f !important; border: 1px solid transparent;
+    padding: 8px 12px; border-radius: 10px; text-decoration: none; font-weight: 600;
+}
+.btn-project-secondary {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: transparent; color: var(--text) !important; border: 1px solid var(--border);
+    padding: 8px 12px; border-radius: 10px; text-decoration: none;
+}
+.btn-project:hover { filter: brightness(1.02); }
+.btn-project-secondary:hover { background: rgba(255,255,255,0.04); }
+
+/* Contact */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+@media (max-width: 575px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.contact-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); border-color: rgba(255,255,255,0.15); }
+.contact-icon { font-size: 22px; }
+.contact-title { margin: 6px 0 4px; }
+.contact-text { margin: 0; color: var(--muted); font-size: 14px; }
+.whatsapp-card { border-left: 3px solid #25D366; }
+.linkedin-card { border-left: 3px solid #0a66c2; }
+.github-card { border-left: 3px solid #999; }
+.medium-card { border-left: 3px solid #000; }
+
+/* Footer */
+.footer { border-top: 1px solid var(--border); padding: 24px 0; background: rgba(0,0,0,0.2); }
+.footer-text { color: var(--muted); margin: 0; }
+.heart { color: var(--primary); }
+
 
