@@ -183,6 +183,80 @@ body {
 .skill-icon { width: 40px; height: 40px; object-fit: contain; margin-bottom: 8px; }
 .skill-name { margin: 0; font-size: 14px; color: var(--text); }
 
+/* AI Skills Cards with Modern Icons */
+.skill-card.ai-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-card.ai-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.skill-card.ai-card:hover::before {
+    left: 100%;
+}
+
+.skill-card.ai-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+    border-color: rgba(255,255,255,0.15);
+}
+
+.skill-icon-svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+.skill-card.ai-card:hover .skill-icon-svg {
+    transform: scale(1.1) rotateY(10deg);
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.4));
+}
+
+.skill-card.ai-card .skill-name {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, var(--text), var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-card.ai-card:hover .skill-name {
+    background: linear-gradient(90deg, #ffffff, var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animation for AI cards */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255,107,61,0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255,107,61,0.4);
+    }
+}
+
+.skill-card.ai-card:hover {
+    animation: pulse-glow 2s infinite;
+}
+
+
 /* Projects */
 .project-card {
     background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
