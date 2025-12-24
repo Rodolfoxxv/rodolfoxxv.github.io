@@ -9,536 +9,737 @@ LinkedIn e GitHub de Rodolfo. O site utiliza Bootstrap para estilização e layo
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodolfo Fonseca - Engenheiro de Dados</title>
+    <title>Rodolfo Fonseca - Analista de Dados</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         .hero-badge {
-            font-size: 1.9rem; /* Ajuste este valor para o tamanho desejado */
+            font-size: 1.9rem;
+            /* Ajuste este valor para o tamanho desejado */
         }
     </style>
 </head>
+
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#home">
-            <span class="brand-text">RF</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="Alternar navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav ml-auto">
-                <a href="#home" class="nav-item nav-link">Início</a>
-                <a href="#sobre" class="nav-item nav-link">Sobre</a>
-                <a href="#experiencia" class="nav-item nav-link">Experiência</a>
-                <a href="#skills" class="nav-item nav-link">Skills</a>
-                <a href="#projetos" class="nav-item nav-link">Projetos</a>
-                <a href="#contato" class="nav-item nav-link">Contato</a>
-                <a href="https://www.linkedin.com/in/rodolfo-fonseca-11122675" target="_blank" rel="noopener noreferrer" class="nav-item nav-link social-icon" aria-label="LinkedIn" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/Rodolfoxxv" target="_blank" rel="noopener noreferrer" class="nav-item nav-link social-icon" aria-label="GitHub" title="GitHub"><i class="fa fa-github"></i></a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">RF</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <a href="#home" class="nav-item nav-link">Início</a>
+                    <a href="#sobre" class="nav-item nav-link">Sobre</a>
+                    <a href="#experiencia" class="nav-item nav-link">Experiência</a>
+                    <a href="#skills" class="nav-item nav-link">Skills</a>
+                    <a href="#projetos" class="nav-item nav-link">Projetos</a>
+                    <a href="#contato" class="nav-item nav-link">Contato</a>
+                    <a href="https://www.linkedin.com/in/rodolfo-fonseca-11122675" target="_blank"
+                        rel="noopener noreferrer" class="nav-item nav-link social-icon" aria-label="LinkedIn"
+                        title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Rodolfoxxv" target="_blank" rel="noopener noreferrer"
+                        class="nav-item nav-link social-icon" aria-label="GitHub" title="GitHub"><i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero-section">
-    <div class="hero-overlay"></div>
-    <div class="container">
-        <div class="row align-items-center min-vh-100">
-            <div class="col-lg-8 mx-auto text-center hero-content">
-                <div class="hero-badge">Engenheiro de Dados</div>
-                <h1 class="hero-title">
-                    Olá, eu sou <br>
-                    <span class="gradient-text">Rodolfo Fonseca</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Transformando dados em insights estratégicos através de pipelines robustos e arquiteturas escaláveis
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projetos" class="btn btn-primary btn-lg mr-3">Ver Projetos</a>
-                    <a href="#contato" class="btn btn-outline-light btn-lg">Entre em Contato</a>
-                </div>
-                <div class="scroll-indicator">
-                    <i class="fa fa-chevron-down"></i>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center hero-content">
+                    <div class="hero-badge">Analista de Dados</div>
+                    <h1 class="hero-title">
+                        Olá, eu sou <br>
+                        <span class="gradient-text">Rodolfo Fonseca</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transformando dados em insights estratégicos através de pipelines robustos e arquiteturas
+                        escaláveis
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary btn-lg mr-3">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-outline-light btn-lg">Entre em Contato</a>
+                    </div>
+                    <div class="scroll-indicator">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About Section -->
-<section id="sobre" class="section-padding">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="section-underline"></div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="about-card">
-                    <div class="about-icon">
-                        <i class="fa fa-database"></i>
-                    </div>
-                    <h3 class="about-title">Minha Jornada</h3>
-                    <p class="about-text">
-                        Com experiência consolidada como <strong>Analista de Dados</strong> e <strong>Business Intelligence</strong>, 
-                        evoluí minha carreira para <strong>Engenheiro de Dados</strong>, onde atuo na construção de arquiteturas 
-                        de dados modernas e escaláveis.
-                    </p>
-                    <p class="about-text">
-                        Especializado em criar pipelines de dados eficientes, automação de processos e integração de sistemas 
-                        utilizando as melhores práticas de infraestrutura como código (IaC) e cloud computing.
-                    </p>
-                </div>
+    <!-- About Section -->
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-underline"></div>
             </div>
-            <div class="col-lg-6">
-                <!-- Adicione sua foto aqui -->
-                <img src="img/Eu.jpg" alt="Foto de Rodolfo Fonseca" class="img-fluid rounded-circle shadow-lg">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Timeline -->
-<section id="experiencia" class="section-padding bg-dark">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2 class="section-title">Trajetória Profissional</h2>
-            <div class="section-underline"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-year">Atual</div>
-                    <h3 class="timeline-title">Engenheiro de Dados</h3>
-                    <p class="timeline-description">
-                        Desenvolvimento de pipelines de dados, automação com Terraform, integração com GCP BigQuery, 
-                        implementação de CI/CD e arquiteturas de dados escaláveis.
-                    </p>
-                    <div class="timeline-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">GCP</span>
-                        <span class="tech-tag">BigQuery</span>
-                        <span class="tech-tag">CI/CD</span>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-year">Anterior</div>
-                    <h3 class="timeline-title">Analista de Dados</h3>
-                    <p class="timeline-description">
-                        Análise exploratória de dados, criação de dashboards interativos, modelagem estatística 
-                        e suporte à tomada de decisões baseada em dados.
-                    </p>
-                    <div class="timeline-tech">
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">Statistics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/Python-logo.png" alt="Python" class="skill-icon">
-                    <h5 class="skill-name">Python</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/sql.png" alt="SQL" class="skill-icon">
-                    <h5 class="skill-name">SQL</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/google-cloud-logo.png" alt="GCP" class="skill-icon">
-                    <h5 class="skill-name">Google Cloud</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/terraformlogo.png" alt="Terraform" class="skill-icon">
-                    <h5 class="skill-name">Terraform</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/Git-Icon-1788C.png" alt="Git" class="skill-icon">
-                    <h5 class="skill-name">Git</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/Pwbi.png" alt="Power BI" class="skill-icon">
-                    <h5 class="skill-name">Power BI</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/excel.png" alt="Excel" class="skill-icon">
-                    <h5 class="skill-name">Excel</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/R_logo.png" alt="R" class="skill-icon">
-                    <h5 class="skill-name">R</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/duckdb.png" alt="DuckDB" class="skill-icon">
-                    <h5 class="skill-name">DuckDB</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/Hey_Machine_Learning_Logo.png" alt="Machine Learning" class="skill-icon">
-                    <h5 class="skill-name">Machine Learning</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/Google_Colab.png" alt="Google Colab" class="skill-icon">
-                    <h5 class="skill-name">Google Colab</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card">
-                    <img src="img/Figma-1-logo.png" alt="Figma" class="skill-icon">
-                    <h5 class="skill-name">Figma</h5>
-                </div>
-            </div>
-            <!-- AI/ML Technologies -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient1)"/>
-                        <path d="M24 12L16 20L24 28L32 20L24 12Z" fill="white" opacity="0.9"/>
-                        <path d="M16 28L24 36L32 28L24 20L16 28Z" fill="white" opacity="0.7"/>
-                        <defs>
-                            <linearGradient id="gradient1" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#FF6B6B"/>
-                                <stop offset="1" stop-color="#FF8E53"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">TensorFlow</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient2)"/>
-                        <circle cx="24" cy="18" r="4" fill="white" opacity="0.9"/>
-                        <circle cx="16" cy="30" r="4" fill="white" opacity="0.8"/>
-                        <circle cx="32" cy="30" r="4" fill="white" opacity="0.8"/>
-                        <path d="M24 22L16 26M24 22L32 26" stroke="white" stroke-width="2" opacity="0.7"/>
-                        <defs>
-                            <linearGradient id="gradient2" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#EE4C2C"/>
-                                <stop offset="1" stop-color="#FF6B35"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">PyTorch</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient3)"/>
-                        <circle cx="24" cy="24" r="8" stroke="white" stroke-width="2" opacity="0.9"/>
-                        <circle cx="24" cy="24" r="3" fill="white" opacity="0.9"/>
-                        <path d="M24 12V16M24 32V36M36 24H32M16 24H12" stroke="white" stroke-width="2" opacity="0.7"/>
-                        <defs>
-                            <linearGradient id="gradient3" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#10A37F"/>
-                                <stop offset="1" stop-color="#1A7F64"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">OpenAI</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient4)"/>
-                        <path d="M12 24C12 24 18 16 24 16C30 16 36 24 36 24C36 24 30 32 24 32C18 32 12 24 12 24Z" fill="white" opacity="0.2"/>
-                        <circle cx="24" cy="24" r="4" fill="white" opacity="0.9"/>
-                        <path d="M20 20L28 28M28 20L20 28" stroke="white" stroke-width="1.5" opacity="0.6"/>
-                        <defs>
-                            <linearGradient id="gradient4" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#FFD21E"/>
-                                <stop offset="1" stop-color="#FF9D00"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">Hugging Face</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient5)"/>
-                        <rect x="12" y="18" width="10" height="12" rx="2" fill="white" opacity="0.8"/>
-                        <rect x="26" y="18" width="10" height="12" rx="2" fill="white" opacity="0.8"/>
-                        <path d="M17 24H22M31 24H36" stroke="white" stroke-width="2" opacity="0.9"/>
-                        <defs>
-                            <linearGradient id="gradient5" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#8B5CF6"/>
-                                <stop offset="1" stop-color="#6366F1"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">LangChain</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient6)"/>
-                        <path d="M14 18L24 24L34 18M14 24L24 30L34 24M14 30L24 36L34 30" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
-                        <defs>
-                            <linearGradient id="gradient6" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#3B82F6"/>
-                                <stop offset="1" stop-color="#2563EB"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">Deep Learning</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient7)"/>
-                        <path d="M16 24H20L24 16L28 32L32 24H36" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-                        <circle cx="24" cy="24" r="2" fill="white" opacity="0.9"/>
-                        <defs>
-                            <linearGradient id="gradient7" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#06B6D4"/>
-                                <stop offset="1" stop-color="#0891B2"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">NLP</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="skill-card ai-card">
-                    <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" rx="8" fill="url(#gradient8)"/>
-                        <rect x="12" y="20" width="8" height="16" rx="1" fill="white" opacity="0.7"/>
-                        <rect x="20" y="16" width="8" height="20" rx="1" fill="white" opacity="0.8"/>
-                        <rect x="28" y="22" width="8" height="14" rx="1" fill="white" opacity="0.9"/>
-                        <defs>
-                            <linearGradient id="gradient8" x1="0" y1="0" x2="48" y2="48">
-                                <stop stop-color="#EC4899"/>
-                                <stop offset="1" stop-color="#DB2777"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h5 class="skill-name">Computer Vision</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projetos" class="section-padding bg-dark">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2 class="section-title">Projetos em Destaque</h2>
-            <div class="section-underline"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fa fa-cloud"></i>
-                        </div>
-                        <h3 class="project-title">DataMatrix</h3>
-                    </div>
-                    <p class="project-description">
-                        Pipeline de dados automatizado utilizando Infrastructure as Code (IaC) com Terraform e Google Cloud Platform. 
-                        Implementação completa de CI/CD com GitHub Actions para provisionamento automático de recursos na nuvem.
-                    </p>
-                    <div class="project-features">
-                        <h5 class="features-title">Principais Features:</h5>
-                        <ul class="features-list">
-                            <li>Automação completa com Terraform</li>
-                            <li>Pipeline CI/CD com GitHub Actions</li>
-                            <li>Provisionamento de infraestrutura GCP</li>
-                            <li>Carregamento de dados no BigQuery</li>
-                            <li>Validação e formatação de código</li>
-                            <li>Infraestrutura replicável e consistente</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Terraform</span>
-                        <span class="tech-badge">GCP</span>
-                        <span class="tech-badge">BigQuery</span>
-                        <span class="tech-badge">CI/CD</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://medium.com/@rodolfoxv/sou-rodolfo-fonseca-analista-de-dados-e039fd73357c" target="_blank" rel="noopener noreferrer" class="btn-project">
-                            <i class="fa fa-book"></i> Ver Artigo
-                        </a>
-                        <a href="https://github.com/Rodolfoxxv/DataMatrix" target="_blank" rel="noopener noreferrer" class="btn-project-secondary">
-                            <i class="fa fa-github"></i> Repositório
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-card">
+                        <div class="about-icon">
                             <i class="fa fa-database"></i>
                         </div>
-                        <h3 class="project-title">Data_Lk</h3>
+                        <h3 class="about-title">Minha Jornada</h3>
+                        <p class="about-text">
+                            Com experiência consolidada como <strong>Analista de Dados</strong> e <strong>Business
+                                Intelligence</strong>,
+                            evoluí minha carreira para <strong>Engenheiro de Dados</strong>, onde atuo na construção de
+                            arquiteturas
+                            de dados modernas e escaláveis.
+                        </p>
+                        <p class="about-text">
+                            Especializado em criar pipelines de dados eficientes, automação de processos e integração de
+                            sistemas
+                            utilizando as melhores práticas de infraestrutura como código (IaC) e cloud computing.
+                        </p>
                     </div>
-                    <p class="project-description">
-                        Solução completa de gerenciamento e sincronização de bancos de dados, integrando DuckDB, GitHub e Supabase. 
-                        Sistema robusto para versionamento de dados com interface moderna usando Streamlit.
-                    </p>
-                    <div class="project-features">
-                        <h5 class="features-title">Principais Features:</h5>
-                        <ul class="features-list">
-                            <li>Operações CRUD completas</li>
-                            <li>Sincronização automática de esquemas</li>
-                            <li>Carregamento incremental de dados</li>
-                            <li>Execução paralela otimizada</li>
-                            <li>Integração PostgreSQL (Supabase)</li>
-                            <li>Interface interativa com Streamlit</li>
-                        </ul>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Adicione sua foto aqui -->
+                    <img src="img/Eu.jpg" alt="Foto de Rodolfo Fonseca" class="img-fluid rounded-circle shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experiencia" class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Trajetória Profissional</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Atual</div>
+                        <h3 class="timeline-title">Analista de Dados</h3>
+                        <p class="timeline-description">
+                            Desenvolvimento de pipelines de dados, automação com Terraform, integração com GCP BigQuery,
+                            implementação de CI/CD e arquiteturas de dados escaláveis.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">BigQuery</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
                     </div>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">DuckDB</span>
-                        <span class="tech-badge">Supabase</span>
-                        <span class="tech-badge">Streamlit</span>
-                        <span class="tech-badge">PostgreSQL</span>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Anterior</div>
+                        <h3 class="timeline-title">Analista de Dados</h3>
+                        <p class="timeline-description">
+                            Análise exploratória de dados, criação de dashboards interativos, modelagem estatística
+                            e suporte à tomada de decisões baseada em dados.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Statistics</span>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://medium.com/@rodolfoxv/data-lk-integra%C3%A7%C3%A3o-duckdb-supabase-com-northwind-e2fad1f945e1" target="_blank" rel="noopener noreferrer" class="btn-project">
-                            <i class="fa fa-book"></i> Ver Artigo
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Python -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientPython)" />
+                            <path
+                                d="M24 10C18 10 17 12 17 15V19H24V20H15C12 20 10 22 10 26C10 30 12 32 15 32H18V28C18 25 20 23 24 23H30C32 23 34 21 34 19V15C34 12 32 10 27 10H24Z"
+                                fill="#FFD43B" />
+                            <path
+                                d="M24 38C30 38 31 36 31 33V29H24V28H33C36 28 38 26 38 22C38 18 36 16 33 16H30V20C30 23 28 25 24 25H18C16 25 14 27 14 29V33C14 36 16 38 21 38H24Z"
+                                fill="#4B8BBE" />
+                            <circle cx="20" cy="15" r="1.5" fill="#4B8BBE" />
+                            <circle cx="28" cy="33" r="1.5" fill="#FFD43B" />
+                            <defs>
+                                <linearGradient id="gradientPython" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#1e3a8a" />
+                                    <stop offset="1" stop-color="#1e293b" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Python</h5>
+                    </div>
+                </div>
+                <!-- SQL -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientSQL)" />
+                            <ellipse cx="24" cy="16" rx="12" ry="4" fill="#E48E00" opacity="0.9" />
+                            <path d="M12 16V32C12 33.1 17.4 36 24 36C30.6 36 36 33.1 36 32V16"
+                                fill="url(#gradientSQL2)" />
+                            <ellipse cx="24" cy="32" rx="12" ry="4" fill="#CC7A00" />
+                            <path d="M12 24C12 25.1 17.4 28 24 28C30.6 28 36 25.1 36 24" stroke="#E48E00"
+                                stroke-width="2" />
+                            <defs>
+                                <linearGradient id="gradientSQL" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#DC6900" />
+                                    <stop offset="1" stop-color="#AA5500" />
+                                </linearGradient>
+                                <linearGradient id="gradientSQL2" x1="24" y1="16" x2="24" y2="36">
+                                    <stop stop-color="#E48E00" />
+                                    <stop offset="1" stop-color="#CC7A00" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">SQL</h5>
+                    </div>
+                </div>
+                <!-- Google Cloud -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientGCP)" />
+                            <path d="M30 18L24 12L18 18L14 14L24 4L34 14L30 18Z" fill="#EA4335" />
+                            <path d="M38 24L34 20L30 24V18L38 26V32L34 28V24H38Z" fill="#4285F4" />
+                            <path d="M18 30L24 36L30 30L34 34L24 44L14 34L18 30Z" fill="#34A853" />
+                            <path d="M10 24L14 28L18 24V30L10 22V16L14 20V24H10Z" fill="#FBBC04" />
+                            <defs>
+                                <linearGradient id="gradientGCP" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#1a73e8" />
+                                    <stop offset="1" stop-color="#0d47a1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Google Cloud</h5>
+                    </div>
+                </div>
+                <!-- Terraform -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientTerraform)" />
+                            <path d="M17 12L17 24L26 29V17L17 12Z" fill="#7B42BC" />
+                            <path d="M26 17L26 29L35 24V12L26 17Z" fill="#5C3C92" />
+                            <path d="M8 17L8 29L17 34V22L8 17Z" fill="#B47EDE" />
+                            <defs>
+                                <linearGradient id="gradientTerraform" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#7B42BC" />
+                                    <stop offset="1" stop-color="#5C3C92" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Terraform</h5>
+                    </div>
+                </div>
+                <!-- Git -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientGit)" />
+                            <path
+                                d="M23.2 10.4L10.4 23.2C9.9 23.7 9.9 24.3 10.4 24.8L23.2 37.6C23.7 38.1 24.3 38.1 24.8 37.6L37.6 24.8C38.1 24.3 38.1 23.7 37.6 23.2L24.8 10.4C24.3 9.9 23.7 9.9 23.2 10.4Z"
+                                fill="#F05032" />
+                            <path d="M20 24L24 20L28 24L24 28L20 24Z" fill="white" opacity="0.9" />
+                            <circle cx="16" cy="24" r="2" fill="white" opacity="0.8" />
+                            <circle cx="32" cy="24" r="2" fill="white" opacity="0.8" />
+                            <defs>
+                                <linearGradient id="gradientGit" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#F05032" />
+                                    <stop offset="1" stop-color="#C73E28" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Git</h5>
+                    </div>
+                </div>
+                <!-- Power BI -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientPowerBI)" />
+                            <rect x="14" y="22" width="6" height="16" rx="1" fill="#F2C811" />
+                            <rect x="21" y="16" width="6" height="22" rx="1" fill="#EAAA00" />
+                            <rect x="28" y="10" width="6" height="28" rx="1" fill="#E88C00" />
+                            <defs>
+                                <linearGradient id="gradientPowerBI" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#F2C811" />
+                                    <stop offset="1" stop-color="#E88C00" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Power BI</h5>
+                    </div>
+                </div>
+                <!-- Excel -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientExcel)" />
+                            <rect x="10" y="10" width="28" height="28" rx="2" fill="#217346" />
+                            <path d="M16 18L22 24L16 30M22 18L28 24L22 30M28 18L34 24L28 30" stroke="white"
+                                stroke-width="2" stroke-linecap="round" opacity="0.9" />
+                            <text x="24" y="32" font-size="14" font-weight="bold" fill="white"
+                                text-anchor="middle">X</text>
+                            <defs>
+                                <linearGradient id="gradientExcel" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#217346" />
+                                    <stop offset="1" stop-color="#185C37" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Excel</h5>
+                    </div>
+                </div>
+                <!-- R -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientR)" />
+                            <ellipse cx="24" cy="24" rx="16" ry="16" fill="#276DC3" opacity="0.2" />
+                            <path d="M18 32V16H24C27 16 29 18 29 21C29 24 27 26 24 26H22L28 32H24L18 26V32Z"
+                                fill="white" opacity="0.9" />
+                            <ellipse cx="24" cy="21" rx="3" ry="2" fill="white" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="gradientR" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#276DC3" />
+                                    <stop offset="1" stop-color="#1E5A9A" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">R</h5>
+                    </div>
+                </div>
+                <!-- DuckDB -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientDuck)" />
+                            <path
+                                d="M28 14C28 14 30 14 32 16C34 18 34 22 32 24C30 26 28 26 26 26H22C20 26 18 28 18 30C18 32 20 34 22 34H30"
+                                stroke="#FFF200" stroke-width="3" stroke-linecap="round" />
+                            <circle cx="28" cy="16" r="2" fill="#FFF200" />
+                            <path d="M16 18C16 18 14 20 14 24C14 28 16 30 18 30" stroke="#FFF200" stroke-width="2"
+                                stroke-linecap="round" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="gradientDuck" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#1a1a1a" />
+                                    <stop offset="1" stop-color="#0a0a0a" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">DuckDB</h5>
+                    </div>
+                </div>
+                <!-- Machine Learning -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientML)" />
+                            <circle cx="24" cy="16" r="3" fill="#00D9FF" opacity="0.9" />
+                            <circle cx="14" cy="26" r="3" fill="#00D9FF" opacity="0.8" />
+                            <circle cx="24" cy="32" r="3" fill="#00D9FF" opacity="0.8" />
+                            <circle cx="34" cy="26" r="3" fill="#00D9FF" opacity="0.8" />
+                            <path d="M24 19L14 23M24 19L34 23M14 29L24 29M34 29L24 29" stroke="#00D9FF"
+                                stroke-width="1.5" opacity="0.6" />
+                            <circle cx="24" cy="24" r="2" fill="#FF6B00" opacity="0.9" />
+                            <defs>
+                                <linearGradient id="gradientML" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#1e293b" />
+                                    <stop offset="1" stop-color="#0f172a" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Machine Learning</h5>
+                    </div>
+                </div>
+                <!-- Google Colab -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientColab)" />
+                            <circle cx="20" cy="24" r="8" fill="#F9AB00" opacity="0.8" />
+                            <circle cx="28" cy="24" r="8" fill="#F9AB00" opacity="0.6" />
+                            <circle cx="24" cy="20" r="4" fill="white" opacity="0.9" />
+                            <circle cx="24" cy="28" r="4" fill="white" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="gradientColab" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#F9AB00" />
+                                    <stop offset="1" stop-color="#E37400" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Google Colab</h5>
+                    </div>
+                </div>
+                <!-- Figma -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card modern-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradientFigma)" />
+                            <circle cx="30" cy="24" r="5" fill="#1ABCFE" />
+                            <rect x="13" y="14" width="10" height="10" rx="5" fill="#0ACF83" />
+                            <rect x="13" y="24" width="10" height="10" rx="5" fill="#A259FF" />
+                            <rect x="13" y="9" width="10" height="10" rx="5" fill="#F24E1E" />
+                            <rect x="13" y="29" width="10" height="10" rx="5" fill="#FF7262" />
+                            <defs>
+                                <linearGradient id="gradientFigma" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#1e1e1e" />
+                                    <stop offset="1" stop-color="#0a0a0a" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Figma</h5>
+                    </div>
+                </div>
+                <!-- AI/ML Technologies -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient1)" />
+                            <path d="M24 12L16 20L24 28L32 20L24 12Z" fill="white" opacity="0.9" />
+                            <path d="M16 28L24 36L32 28L24 20L16 28Z" fill="white" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="gradient1" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#FF6B6B" />
+                                    <stop offset="1" stop-color="#FF8E53" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">TensorFlow</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient2)" />
+                            <circle cx="24" cy="18" r="4" fill="white" opacity="0.9" />
+                            <circle cx="16" cy="30" r="4" fill="white" opacity="0.8" />
+                            <circle cx="32" cy="30" r="4" fill="white" opacity="0.8" />
+                            <path d="M24 22L16 26M24 22L32 26" stroke="white" stroke-width="2" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#EE4C2C" />
+                                    <stop offset="1" stop-color="#FF6B35" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">PyTorch</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient3)" />
+                            <circle cx="24" cy="24" r="8" stroke="white" stroke-width="2" opacity="0.9" />
+                            <circle cx="24" cy="24" r="3" fill="white" opacity="0.9" />
+                            <path d="M24 12V16M24 32V36M36 24H32M16 24H12" stroke="white" stroke-width="2"
+                                opacity="0.7" />
+                            <defs>
+                                <linearGradient id="gradient3" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#10A37F" />
+                                    <stop offset="1" stop-color="#1A7F64" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">OpenAI</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient4)" />
+                            <path d="M12 24C12 24 18 16 24 16C30 16 36 24 36 24C36 24 30 32 24 32C18 32 12 24 12 24Z"
+                                fill="white" opacity="0.2" />
+                            <circle cx="24" cy="24" r="4" fill="white" opacity="0.9" />
+                            <path d="M20 20L28 28M28 20L20 28" stroke="white" stroke-width="1.5" opacity="0.6" />
+                            <defs>
+                                <linearGradient id="gradient4" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#FFD21E" />
+                                    <stop offset="1" stop-color="#FF9D00" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Hugging Face</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient5)" />
+                            <rect x="12" y="18" width="10" height="12" rx="2" fill="white" opacity="0.8" />
+                            <rect x="26" y="18" width="10" height="12" rx="2" fill="white" opacity="0.8" />
+                            <path d="M17 24H22M31 24H36" stroke="white" stroke-width="2" opacity="0.9" />
+                            <defs>
+                                <linearGradient id="gradient5" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#8B5CF6" />
+                                    <stop offset="1" stop-color="#6366F1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">LangChain</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient6)" />
+                            <path d="M14 18L24 24L34 18M14 24L24 30L34 24M14 30L24 36L34 30" stroke="white"
+                                stroke-width="2" stroke-linecap="round" opacity="0.9" />
+                            <defs>
+                                <linearGradient id="gradient6" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#3B82F6" />
+                                    <stop offset="1" stop-color="#2563EB" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Deep Learning</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient7)" />
+                            <path d="M16 24H20L24 16L28 32L32 24H36" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+                            <circle cx="24" cy="24" r="2" fill="white" opacity="0.9" />
+                            <defs>
+                                <linearGradient id="gradient7" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#06B6D4" />
+                                    <stop offset="1" stop-color="#0891B2" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">NLP</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card ai-card">
+                        <svg class="skill-icon-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="url(#gradient8)" />
+                            <rect x="12" y="20" width="8" height="16" rx="1" fill="white" opacity="0.7" />
+                            <rect x="20" y="16" width="8" height="20" rx="1" fill="white" opacity="0.8" />
+                            <rect x="28" y="22" width="8" height="14" rx="1" fill="white" opacity="0.9" />
+                            <defs>
+                                <linearGradient id="gradient8" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#EC4899" />
+                                    <stop offset="1" stop-color="#DB2777" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h5 class="skill-name">Computer Vision</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fa fa-cloud"></i>
+                            </div>
+                            <h3 class="project-title">DataMatrix</h3>
+                        </div>
+                        <p class="project-description">
+                            Pipeline de dados automatizado utilizando Infrastructure as Code (IaC) com Terraform e
+                            Google Cloud Platform.
+                            Implementação completa de CI/CD com GitHub Actions para provisionamento automático de
+                            recursos na nuvem.
+                        </p>
+                        <div class="project-features">
+                            <h5 class="features-title">Principais Features:</h5>
+                            <ul class="features-list">
+                                <li>Automação completa com Terraform</li>
+                                <li>Pipeline CI/CD com GitHub Actions</li>
+                                <li>Provisionamento de infraestrutura GCP</li>
+                                <li>Carregamento de dados no BigQuery</li>
+                                <li>Validação e formatação de código</li>
+                                <li>Infraestrutura replicável e consistente</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">GCP</span>
+                            <span class="tech-badge">BigQuery</span>
+                            <span class="tech-badge">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://medium.com/@rodolfoxv/sou-rodolfo-fonseca-analista-de-dados-e039fd73357c"
+                                target="_blank" rel="noopener noreferrer" class="btn-project">
+                                <i class="fa fa-book"></i> Ver Artigo
+                            </a>
+                            <a href="https://github.com/Rodolfoxxv/DataMatrix" target="_blank" rel="noopener noreferrer"
+                                class="btn-project-secondary">
+                                <i class="fa fa-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fa fa-database"></i>
+                            </div>
+                            <h3 class="project-title">Data_Lk</h3>
+                        </div>
+                        <p class="project-description">
+                            Solução completa de gerenciamento e sincronização de bancos de dados, integrando DuckDB,
+                            GitHub e Supabase.
+                            Sistema robusto para versionamento de dados com interface moderna usando Streamlit.
+                        </p>
+                        <div class="project-features">
+                            <h5 class="features-title">Principais Features:</h5>
+                            <ul class="features-list">
+                                <li>Operações CRUD completas</li>
+                                <li>Sincronização automática de esquemas</li>
+                                <li>Carregamento incremental de dados</li>
+                                <li>Execução paralela otimizada</li>
+                                <li>Integração PostgreSQL (Supabase)</li>
+                                <li>Interface interativa com Streamlit</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">DuckDB</span>
+                            <span class="tech-badge">Supabase</span>
+                            <span class="tech-badge">Streamlit</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://medium.com/@rodolfoxv/data-lk-integra%C3%A7%C3%A3o-duckdb-supabase-com-northwind-e2fad1f945e1"
+                                target="_blank" rel="noopener noreferrer" class="btn-project">
+                                <i class="fa fa-book"></i> Ver Artigo
+                            </a>
+                            <a href="https://github.com/Rodolfoxxv/NW-Data" target="_blank" rel="noopener noreferrer"
+                                class="btn-project-secondary">
+                                <i class="fa fa-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">Estou sempre aberto a discutir novos projetos, oportunidades e parcerias</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-grid">
+                        <a href="http://tinyurl.com/wzd6uusp" target="_blank" rel="noopener noreferrer"
+                            class="contact-card whatsapp-card">
+                            <div class="contact-icon">
+                                <i class="fa fa-whatsapp"></i>
+                            </div>
+                            <h4 class="contact-title">WhatsApp</h4>
+                            <p class="contact-text">Envie uma mensagem</p>
                         </a>
-                        <a href="https://github.com/Rodolfoxxv/NW-Data" target="_blank" rel="noopener noreferrer" class="btn-project-secondary">
-                            <i class="fa fa-github"></i> Repositório
+                        <a href="https://www.linkedin.com/in/rodolfo-fonseca-11122675" target="_blank"
+                            rel="noopener noreferrer" class="contact-card linkedin-card">
+                            <div class="contact-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                            <h4 class="contact-title">LinkedIn</h4>
+                            <p class="contact-text">Vamos conectar</p>
+                        </a>
+                        <a href="https://github.com/Rodolfoxxv" target="_blank" rel="noopener noreferrer"
+                            class="contact-card github-card">
+                            <div class="contact-icon">
+                                <i class="fa fa-github"></i>
+                            </div>
+                            <h4 class="contact-title">GitHub</h4>
+                            <p class="contact-text">Veja meus códigos</p>
+                        </a>
+                        <a href="https://medium.com/@rodolfoxv" target="_blank" rel="noopener noreferrer"
+                            class="contact-card medium-card">
+                            <div class="contact-icon">
+                                <i class="fa fa-medium"></i>
+                            </div>
+                            <h4 class="contact-title">Medium</h4>
+                            <p class="contact-text">Leia meus artigos</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contato" class="section-padding">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2 class="section-title">Vamos Conversar?</h2>
-            <div class="section-underline"></div>
-            <p class="section-subtitle">Estou sempre aberto a discutir novos projetos, oportunidades e parcerias</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="footer-text">
+                &copy; 2025 Rodolfo Fonseca. Feito com <span class="heart"></span>
+            </p>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="contact-grid">
-                    <a href="http://tinyurl.com/wzd6uusp" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-whatsapp"></i>
-                        </div>
-                        <h4 class="contact-title">WhatsApp</h4>
-                        <p class="contact-text">Envie uma mensagem</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/rodolfo-fonseca-11122675" target="_blank" rel="noopener noreferrer" class="contact-card linkedin-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-linkedin"></i>
-                        </div>
-                        <h4 class="contact-title">LinkedIn</h4>
-                        <p class="contact-text">Vamos conectar</p>
-                    </a>
-                    <a href="https://github.com/Rodolfoxxv" target="_blank" rel="noopener noreferrer" class="contact-card github-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-github"></i>
-                        </div>
-                        <h4 class="contact-title">GitHub</h4>
-                        <p class="contact-text">Veja meus códigos</p>
-                    </a>
-                    <a href="https://medium.com/@rodolfoxv" target="_blank" rel="noopener noreferrer" class="contact-card medium-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-medium"></i>
-                        </div>
-                        <h4 class="contact-title">Medium</h4>
-                        <p class="contact-text">Leia meus artigos</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </footer>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container text-center">
-        <p class="footer-text">
-            &copy; 2025 Rodolfo Fonseca. Feito com <span class="heart"></span>
-        </p>
-    </div>
-</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script>
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Navbar background on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
         });
-    });
-
-    // Navbar background on scroll
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
+    </script>
 </body>
+
 </html>
